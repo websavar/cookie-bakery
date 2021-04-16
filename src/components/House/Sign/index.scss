@@ -1,0 +1,16 @@
+$sign-color: #2b5217;
+$sign-bg-color: #93c47d;
+$sign-border-color: #79a352;
+
+.sign {
+    background-color: $sign-bg-color;
+    border: 3px solid $sign-border-color;
+    border-radius: 2px;
+    bottom: -16px;
+    color: $sign-color;
+    font-size: 20px;
+    font-weight: bold;
+    left: 25%;
+    padding: 7px 20px;
+    text-align: center;
+}
