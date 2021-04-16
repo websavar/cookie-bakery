@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Sun from './components/Sun/index';
+import House from './components/House';
 
 const App = () => {
 
@@ -16,6 +17,7 @@ const App = () => {
                 sun={sunState}
                 click={sunHandler}
             />
+            <House />
         </div>
     )
 }
