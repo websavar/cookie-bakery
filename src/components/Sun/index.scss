@@ -1,0 +1,38 @@
+$sun-color: #ffff00;
+$moon-color: #ccc;
+$mate-color: rgba(0,0,0,0.8);
+$sun-size: 115px;
+
+.sun {
+    background: $sun-color;
+    border-radius: 50%;
+    cursor: pointer;
+    height: $sun-size;
+    transition: 0.5s;
+    width: $sun-size;
+    z-index: 3;
+    
+    &:hover, &.moon {
+        background: $moon-color;
+    }
+}
+
+.mate{
+    background-color: $mate-color;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+
+    &.sunny {
+        display: none;
+    }
+    
+    &.night {
+        animation: night 0.5s ease-in-out;
+    }
+}
+
+@keyframes night {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
