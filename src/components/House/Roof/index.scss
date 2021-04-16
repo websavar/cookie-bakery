@@ -1,0 +1,7 @@
+$roof-color: #dd7e6b;
+
+.roof {
+    border-left: 220px solid transparent;
+    border-right: 220px solid transparent;
+    border-bottom: 200px solid $roof-color;
+}
