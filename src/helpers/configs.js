@@ -1,0 +1,1 @@
+export const apiUrl = "https://websavar.com/auto1-task/";

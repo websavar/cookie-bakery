@@ -1,0 +1,17 @@
+$door-color: #f6b26b;
+$knob-color: #b45f06;
+$door-height: 210px;
+
+.door {
+    background: $door-color;
+    width: 100%;
+    height: $door-height;
+    cursor: pointer;
+
+    .knob {
+        background: $knob-color;
+        width: 25px;
+        height: 4px;
+        border-radius: 1px;
+    }
+}

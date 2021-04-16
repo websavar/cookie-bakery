@@ -16,5 +16,6 @@ $window-hover-color: #c5c5c5;
     &:hover{
         background-color:rgba(0,0,0,0);
         background-color:$window-hover-color;
+        background-position: 1px;
     }
 }

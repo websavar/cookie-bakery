@@ -4,6 +4,7 @@ import './index.scss';
 import Roof from './Roof';
 import Sign from './Sign';
 import Window from './Window'
+import Door from './Door';
 
 const Bakery = () => {
 
@@ -13,11 +14,12 @@ const Bakery = () => {
                 <Roof />
                 <Sign />
             </div>
-            <div className="body d-flex m-auto">
-                <div className="col-6 d-inline-flex justify-content-center pt-4">
+            <div className="body d-flex m-auto pt-4">
+                <div className="col-4 d-inline-flex justify-content-end">
                     <Window />
                 </div>
-                <div className="col-6 d-inline-flex pt-4">
+                <Door />
+                <div className="col-4">
                     <Window />
                 </div>
             </div>
