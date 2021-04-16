@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+
 import './App.css';
-import Sun from './components/Sun/index';
-import House from './components/House';
+import Sun from './components/Sun';
+import Bakery from './components/Bakery';
 
 const App = () => {
 
@@ -17,7 +18,7 @@ const App = () => {
                 sun={sunState}
                 click={sunHandler}
             />
-            <House />
+            <Bakery />
         </div>
     )
 }
