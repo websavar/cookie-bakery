@@ -1,0 +1,42 @@
+$background: #999;
+$color: #666;
+
+.mailbox {
+    background-color: $background;
+    color: $color;
+    cursor: pointer;
+    font-size: 14px;
+    height: 65px;
+    padding: 1px;
+    text-align: center;
+    width: 95px;
+
+    &.mailbox-fall {
+        animation: fall 1s linear;
+        animation-fill-mode: forwards;
+        position: absolute;
+    }
+
+    .mailbox-door {
+        background-color: $color;
+        height: 10px;
+        margin: 10px auto 4px;
+    }
+}
+
+@keyframes fall {
+    0% {transform: rotate(0deg);}
+    20% {transform: rotate(-10deg);}
+    40% {transform: rotate(15deg);}
+    60% {transform: rotate(-20deg);bottom: 50px;}
+    80% {transform: rotate(0deg);bottom:0;}
+    90% {transform: rotate(10deg);bottom:5px;}
+    100% {
+        transform: translateY(0px);
+        transform: rotate(-10deg); 
+        transform: skewX(-7deg); 
+        bottom:0; 
+        cursor: auto;
+        height: 70px;
+    }
+}

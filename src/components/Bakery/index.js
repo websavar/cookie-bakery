@@ -5,6 +5,7 @@ import Roof from './Roof';
 import Sign from './Sign';
 import Window from './Window'
 import Door from './Door';
+import Mailbox from './Mailbox';
 
 const Bakery = () => {
 
@@ -21,6 +22,7 @@ const Bakery = () => {
                 <Door />
                 <div className="col-4">
                     <Window />
+                    <Mailbox />
                 </div>
             </div>
         </div>
