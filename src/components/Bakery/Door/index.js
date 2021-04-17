@@ -15,7 +15,7 @@ const Door = () => {
     }
 
     return (
-        <div className="col-4 d-inline-flex align-self-end">
+        <div className="col-4 d-inline-flex align-self-end p-0 pr-sm-3 pl-sm-3">
             <div
                 onClick={doorClickHandler}
                 className="door d-flex p-1"

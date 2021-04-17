@@ -10,24 +10,28 @@ $sun-size: 115px;
     height: $sun-size;
     transition: 0.5s;
     width: $sun-size;
-    z-index: 3;
+    z-index: 12;
     
-    &:hover, &.moon {
+    &:hover {
         background: $moon-color;
     }
 }
 
-.mate{
+.mate {
     background-color: $mate-color;
+    display: none;
     height: 100%;
     width: 100%;
-    z-index: 2;
+    z-index: 11;
+}
 
-    &.sunny {
-        display: none;
+.sky.night-mode {
+    .sun {
+        background: $moon-color;
     }
-    
-    &.night {
+
+    .mate {
+        display: block;
         animation: night 0.5s ease-in-out;
     }
 }
@@ -35,4 +39,11 @@ $sun-size: 115px;
 @keyframes night {
     0% {opacity: 0;}
     100% {opacity: 1;}
+}
+
+@media only screen and (max-width: 500px) {
+    .sun {
+        width: calc(100vw / 5);
+        height: calc(100vw / 5);
+    }
 }

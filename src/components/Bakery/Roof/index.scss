@@ -5,3 +5,14 @@ $roof-color: #dd7e6b;
     border-right: 220px solid transparent;
     border-bottom: 200px solid $roof-color;
 }
+
+@media only screen and (max-width: 500px) {
+    .roof {
+        border-left: calc(100vw / 2.3) solid transparent;
+        border-right: calc(100vw / 2.3) solid transparent;
+        border-bottom: calc(100vw / 2.4) solid #dd7e6b;
+        height: 200px;
+        margin: 0 -10px;
+        width: calc(100vw - 60px);
+    }
+}

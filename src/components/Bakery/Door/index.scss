@@ -15,3 +15,9 @@ $door-height: 210px;
         border-radius: 1px;
     }
 }
+
+@media only screen and (max-width: 500px) {
+    .door {
+        height: calc(100vw * 0.5);
+    }
+}

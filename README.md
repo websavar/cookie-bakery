@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Auto1 Frontend Developer Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Foundation
 
-## Available Scripts
+Also he has some requirements on what materials to use:
 
-In the project directory, you can run:
+- As there are no more bricks and cement available you are asked to build the structure
+with help of `HTML` and `CSS`.
+- As the client is really into frameworks he also asks you to build as much of the bakery as
+possible using `Bootstrap` and avoid SVG as he is allergic to it.
+- He likes to be up to date so he wants you to use Vue.js or `React`, preferably using CLI
+tools (Vue CLI or create-react-app)
 
-### `npm start`
+## Functionality
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+After you have built the house, it needs some cookie bakery special features:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- If a customer holds their hand in front of the window (hover the window) it should
+transform to a `cookie`. The cookie it transforms to can be taken from
+images.google.com.
+- If someone knocks on the door (click) an order will be made. Unfortunately there are no
+bakers at work so your request must be sent to a `SQLite` Database via `PHP` (optionally
+use Symfony 4 or 5). Every request just has a timestamp.
+If you have no experience with such technologies the client asks you to do some
+research or provide an equivalent solution.
+- A click on the sun should switch the bakery to `night mode`. In night mode the whole
+scenery will be dark and transforming the window and requesting cookies are not
+possible any more.
+- If someone tries to use the `mailbox` (click) it falls to the ground because of the poor
+construction quality.
 
-### `npm test`
+## Database and PHP file
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+You can investigate the request results via the link below:
+https://websavar.com/auto1-task/service.php
 
-### `npm run build`
+Database address: `https://websavar.com/auto1-task/database.db`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- A static hypothetical `token` is considered for security issues.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Setup and run
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Run `nvm use` to use the proper Node.js version
+2. Run `npm install` to install required dependencies
+3. Run `npm start` to run the project and Open `http://localhost:3000`
