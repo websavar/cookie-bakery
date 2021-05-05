@@ -1,15 +1,10 @@
-# Auto1 Frontend Developer Challenge
+# Cookie Bakery
 
 ## Foundation
 
-Also he has some requirements on what materials to use:
-
-- As there are no more bricks and cement available you are asked to build the structure
-with help of `HTML` and `CSS`.
-- As the client is really into frameworks he also asks you to build as much of the bakery as
-possible using `Bootstrap` and avoid SVG as he is allergic to it.
-- He likes to be up to date so he wants you to use Vue.js or `React`, preferably using CLI
-tools (Vue CLI or create-react-app)
+- Build the structure with help of `HTML` and `CSS`.
+- Using `Bootstrap` and avoid SVG.
+- Use Vue.js or `React`, preferably using CLI tools (Vue CLI or create-react-app)
 
 ## Functionality
 
@@ -28,13 +23,14 @@ scenery will be dark and transforming the window and requesting cookies are not
 possible any more.
 - If someone tries to use the `mailbox` (click) it falls to the ground because of the poor
 construction quality.
+- Consider responsive design.
 
 ## Database and PHP file
 
 You can investigate the request results via the link below:
-https://websavar.com/auto1-task/service.php
+https://websavar.com/cookie-bakery/service.php
 
-Database address: `https://websavar.com/auto1-task/database.db`
+Database address: `https://websavar.com/cookie-bakery/database.db`
 
 - A static hypothetical `token` is considered for security issues.
 

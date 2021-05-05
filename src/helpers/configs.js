@@ -1,1 +1,1 @@
-export const apiUrl = "https://websavar.com/auto1-task/";
+export const apiUrl = "https://websavar.com/cookie-bakery/";
